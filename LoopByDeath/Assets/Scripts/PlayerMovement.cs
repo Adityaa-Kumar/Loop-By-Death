@@ -3,8 +3,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public Rigidbody2D rb;
-    public bool isDead;
+    
 
     [Header("Movement")]
     public float moveSpeed = 5f;
@@ -23,6 +22,12 @@ public class PlayerMovement : MonoBehaviour
     public float maxFallSpeed = 18f;
     public float fallSpeedMultiplier = 2f;
 
+    [Header("Miscellaneous")]
+    public Rigidbody2D rb;
+    public bool isDead;
+     bool isFacingRight = true;
+    public GameObject playerCorpse;
+
     void Start()
     {
 
@@ -33,6 +38,7 @@ public class PlayerMovement : MonoBehaviour
         rb.linearVelocity = new Vector2(horizontalMovement * moveSpeed, rb.linearVelocity.y);
         GroundCheck();
         Gravity();
+        Flip();
 
         if (isDead)
         {
@@ -40,6 +46,9 @@ public class PlayerMovement : MonoBehaviour
             rb.constraints = RigidbodyConstraints2D.FreezePositionX;
             rb.constraints = RigidbodyConstraints2D.FreezePositionY;
             rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+
+            Instantiate(playerCorpse, this.transform.position, Quaternion.identity);
+            Destroy(this.gameObject);
         }
     }
 
@@ -79,6 +88,19 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             rb.gravityScale = baseGravity;
+        }
+    }
+
+    void Flip()
+    {
+        if (isFacingRight && horizontalMovement < 0 || !isFacingRight && horizontalMovement > 0)
+        {
+            isFacingRight = !isFacingRight;
+            Vector3 ls = transform.localScale;
+            ls.x *= -1f;
+            transform.localScale = ls;
+
+            
         }
     }
 
