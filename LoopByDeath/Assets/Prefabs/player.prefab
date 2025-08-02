@@ -280,6 +280,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 5701383044735738861}
+  isDead: 0
   moveSpeed: 4.3
   jumpPower: 7
   groundCheckPos: {fileID: 8279665873899757096}

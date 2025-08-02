@@ -4,6 +4,7 @@ using UnityEngine.InputSystem;
 public class PlayerMovement : MonoBehaviour
 {
     public Rigidbody2D rb;
+    public bool isDead;
 
     [Header("Movement")]
     public float moveSpeed = 5f;
@@ -32,11 +33,23 @@ public class PlayerMovement : MonoBehaviour
         rb.linearVelocity = new Vector2(horizontalMovement * moveSpeed, rb.linearVelocity.y);
         GroundCheck();
         Gravity();
+
+        if (isDead)
+        {
+            Rigidbody2D rb = this.gameObject.GetComponent<Rigidbody2D>();
+            rb.constraints = RigidbodyConstraints2D.FreezePositionX;
+            rb.constraints = RigidbodyConstraints2D.FreezePositionY;
+            rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+        }
     }
 
     public void Move(InputAction.CallbackContext context)
     {
-        horizontalMovement = context.ReadValue<Vector2>().x;
+        if (!isDead)
+        {
+            horizontalMovement = context.ReadValue<Vector2>().x;
+            
+        }
     }
 
     public void Jump(InputAction.CallbackContext context)
@@ -82,10 +95,5 @@ public class PlayerMovement : MonoBehaviour
     {
         Gizmos.color = Color.white;
         Gizmos.DrawWireCube(groundCheckPos.position, groundCheckSize);
-    }
-
-    void OnTriggerEnter2D()
-    {
-        
     }
 }
