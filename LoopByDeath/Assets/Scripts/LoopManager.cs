@@ -35,10 +35,7 @@ public class LoopManager : MonoBehaviour
             bgMusic.Pause();
         }
 
-        if (Input.GetButtonDown("E"))
-        {
-            DieButton();
-        }
+        
     }
 
     public void ReduceLoops()
