@@ -4,6 +4,7 @@ using UnityEngine.UI;
 using System.Collections;
 using TMPro;
 using JetBrains.Annotations;
+using Unity.VisualScripting;
 
 public class LoopManager : MonoBehaviour
 {
@@ -28,6 +29,8 @@ public class LoopManager : MonoBehaviour
     void Start()
     {
         deadPanel.SetActive(false);
+
+        resume();
     }
 
     // Update is called once per frame
@@ -44,14 +47,13 @@ public class LoopManager : MonoBehaviour
         {
             DieButton();
         }
-
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (paused == false)
             {
                 pause();
             }
-            if (paused == true)
+            else if (paused == true)
             {
                 resume();
             }
@@ -88,13 +90,17 @@ public class LoopManager : MonoBehaviour
 
     public void pause()
     {
+        pausePanel.SetActive(true);
         Time.timeScale = 0f;
         paused = true;
+        print("Pause");
     }
 
     public void resume()
     {
         Time.timeScale = 1f;
+        pausePanel.SetActive(false);
         paused = false;
+        print("Resume");
     }
 }
