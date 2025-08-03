@@ -3,6 +3,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using System.Collections;
 using TMPro;
+using JetBrains.Annotations;
 
 public class LoopManager : MonoBehaviour
 {
@@ -23,6 +24,10 @@ public class LoopManager : MonoBehaviour
     public GameObject player;
     public Transform respawnPt;
 
+    [Header("PauseScreen")]
+    public GameObject pausePanel;
+    public bool paused = false;
+
     void Start()
     {
         deadPanel.SetActive(false);
@@ -41,6 +46,18 @@ public class LoopManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             DieButton();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (paused == false)
+            {
+                pause();
+            }
+            if (paused == true)
+            {
+                resume();
+            }
         }
     }
 
@@ -75,10 +92,12 @@ public class LoopManager : MonoBehaviour
     public void pause()
     {
         Time.timeScale = 0f;
+        paused = true;
     }
 
     public void resume()
     {
         Time.timeScale = 1f;
+        paused = false;
     }
 }
