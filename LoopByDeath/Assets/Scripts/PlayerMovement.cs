@@ -3,8 +3,6 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
-    
-
     [Header("Movement")]
     public float moveSpeed = 5f;
     float horizontalMovement;
@@ -17,12 +15,19 @@ public class PlayerMovement : MonoBehaviour
     public Vector2 groundCheckSize = new Vector2(0.5f, 0.05f);
     public LayerMask groundLayer;
 
+    [Header("Coyote Time")]
+    public float coyoteTime = 0.2f;
+    private float coyoteTimeCounter;
+    private bool isGrounded;
+
+    [Header("Jump Buffering")]
+    public float jumpBufferTime = 0.2f;
+    private float jumpBufferCounter;
+
     [Header("Gravity")]
     public float baseGravity = 2f;
     public float maxFallSpeed = 18f;
     public float fallSpeedMultiplier = 2f;
-
-    
 
     [Header("Miscellaneous")]
     public Rigidbody2D rb;
@@ -35,29 +40,36 @@ public class PlayerMovement : MonoBehaviour
     {
         LoopMgr = GameObject.Find("LoopManager");
         LoopMgr.GetComponent<LoopManager>().ReduceLoops();
-
     }
 
     void FixedUpdate()
     {
+        isGrounded = GroundCheck();
+        UpdateCoyoteTime();
+        jumpBufferCounter -= Time.fixedDeltaTime;
+
+        // Movement
         rb.linearVelocity = new Vector2(horizontalMovement * moveSpeed, rb.linearVelocity.y);
-        GroundCheck();
         Gravity();
         Flip();
 
-        if (isDead)
+        // Handle buffered jump if allowed
+        if (jumpBufferCounter > 0f && coyoteTimeCounter > 0f)
         {
-            Rigidbody2D rb = this.gameObject.GetComponent<Rigidbody2D>();
-
-            rb.constraints = RigidbodyConstraints2D.FreezePositionX;
-            rb.constraints = RigidbodyConstraints2D.FreezePositionY;
-            rb.constraints = RigidbodyConstraints2D.FreezeRotation;
-
-            Instantiate(playerCorpse, this.transform.position, Quaternion.identity);
-            Destroy(this.gameObject);
-
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpPower);
+            jumpBufferCounter = 0f;
+            coyoteTimeCounter = 0f;
         }
 
+        // Handle death
+        if (isDead)
+        {
+            rb.constraints = RigidbodyConstraints2D.FreezeAll;
+            Instantiate(playerCorpse, transform.position, Quaternion.identity);
+            Destroy(gameObject);
+        }
+
+        // Loop manager check
         if (LoopMgr.GetComponent<LoopManager>().loops == 0 && this.gameObject)
         {
             Destroy(this.gameObject);
@@ -69,33 +81,22 @@ public class PlayerMovement : MonoBehaviour
         if (!isDead)
         {
             horizontalMovement = context.ReadValue<Vector2>().x;
-            
         }
     }
-
-    // public void Die()
-    // {
-    //     LoopMgr.GetComponent<LoopManager>().DieButton();
-    // }
 
     public void Jump(InputAction.CallbackContext context)
     {
-        if (GroundCheck())
+        if (context.performed)
         {
-            if (context.performed)
-            {
-                rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpPower);
-
-            }
-            else if (context.canceled)
-            {
-                rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpPower * 0.5f);
-
-            }
+            jumpBufferCounter = jumpBufferTime;
+        }
+        else if (context.canceled && rb.linearVelocity.y > 0)
+        {
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, rb.linearVelocity.y * 0.5f);
         }
     }
 
-     void Gravity()
+    void Gravity()
     {
         if (rb.linearVelocity.y < 0)
         {
@@ -110,24 +111,30 @@ public class PlayerMovement : MonoBehaviour
 
     void Flip()
     {
-        if (isFacingRight && horizontalMovement < 0 || !isFacingRight && horizontalMovement > 0)
+        if ((isFacingRight && horizontalMovement < 0) || (!isFacingRight && horizontalMovement > 0))
         {
             isFacingRight = !isFacingRight;
             Vector3 ls = transform.localScale;
             ls.x *= -1f;
             transform.localScale = ls;
-
-            
         }
     }
 
     bool GroundCheck()
     {
-        if (Physics2D.OverlapBox(groundCheckPos.position, groundCheckSize, 0, groundLayer))
+        return Physics2D.OverlapBox(groundCheckPos.position, groundCheckSize, 0, groundLayer);
+    }
+
+    void UpdateCoyoteTime()
+    {
+        if (isGrounded)
         {
-            return true;
+            coyoteTimeCounter = coyoteTime;
         }
-        return false;
+        else
+        {
+            coyoteTimeCounter -= Time.fixedDeltaTime;
+        }
     }
 
     void OnDrawGizmosSelected()
