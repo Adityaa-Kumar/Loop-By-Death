@@ -7,22 +7,14 @@ public class OnPortal : MonoBehaviour
     public AudioSource source;
     public AudioClip gameOverClip;
     public AudioSource bgMusic;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    void OnTriggerEnter2D(Collider2D other)
     {
-        
-    }
-
-    void OnTriggerEnter2D(Collider2D collision)
-    {
-        deadPanel.SetActive(true);
-        source.PlayOneShot(gameOverClip, 0.05f);
-        bgMusic.Pause();
+        if (other.CompareTag("Player"))
+        {
+            deadPanel.SetActive(true);
+            source.PlayOneShot(gameOverClip, 0.05f);
+            bgMusic.Pause();
+        }
     }
 }
