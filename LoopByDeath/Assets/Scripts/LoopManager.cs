@@ -72,5 +72,13 @@ public class LoopManager : MonoBehaviour
         Instantiate(player, respawnPt.position, Quaternion.identity); 
     }
 
+    public void pause()
+    {
+        Time.timeScale = 0f;
+    }
 
+    public void resume()
+    {
+        Time.timeScale = 1f;
+    }
 }
