@@ -5,6 +5,6 @@ public class MenuManager : MonoBehaviour
 {
     public void OnStartClick()
     {
-        SceneManager.LoadScene("Level4");
+        SceneManager.LoadScene("Level1");
     }
 }

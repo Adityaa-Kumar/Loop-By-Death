@@ -7,6 +7,7 @@ public class OnPortal : MonoBehaviour
     public AudioSource source;
     public AudioClip gameOverClip;
     public AudioSource bgMusic;
+    public LoopManager loopManager;
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -15,6 +16,7 @@ public class OnPortal : MonoBehaviour
             deadPanel.SetActive(true);
             source.PlayOneShot(gameOverClip, 0.05f);
             bgMusic.Pause();
+            Time.timeScale = 0f;
         }
     }
 }
