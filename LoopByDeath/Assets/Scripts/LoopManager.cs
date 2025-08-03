@@ -16,6 +16,9 @@ public class LoopManager : MonoBehaviour
     public AudioClip gameOverClip;
     public AudioSource bgMusic;
 
+    [Header("Win")]
+    public GameObject winPanel;
+
     [Header("Die button")]
     public GameObject player;
     public Transform respawnPt;
@@ -35,7 +38,10 @@ public class LoopManager : MonoBehaviour
             bgMusic.Pause();
         }
 
-        
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            DieButton();
+        }
     }
 
     public void ReduceLoops()
