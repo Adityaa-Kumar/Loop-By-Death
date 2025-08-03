@@ -262,6 +262,10 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: e914a823-efd0-4720-8a59-aa5349f0391b
     m_ActionName: 'Player/Jump[/Keyboard/space,/Keyboard/w,/Keyboard/upArrow]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 356fc02a-76a5-4024-a74c-cc8204ad3a97
+    m_ActionName: 'Player/Die[/Keyboard/e]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -282,15 +286,13 @@ MonoBehaviour:
   moveSpeed: 4.3
   jumpPower: 7
   groundCheckPos: {fileID: 8279665873899757096}
-  groundCheckSize: {x: 0.6, y: 0.05}
+  groundCheckSize: {x: 0.4, y: 0.05}
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
   baseGravity: 2
   maxFallSpeed: 18
   fallSpeedMultiplier: 2
-  loops: 5
-  loopText: {fileID: 9046516172381688132, guid: 1a8929089e66141bd9514d571c26328a, type: 3}
   rb: {fileID: 5701383044735738861}
   isDead: 0
   playerCorpse: {fileID: 9164955379904654293, guid: 2ecbfc4e0938e49b9965fb1dc890b625, type: 3}
