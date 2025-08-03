@@ -48,6 +48,7 @@ public class PlayerMovement : MonoBehaviour
         if (isDead)
         {
             Rigidbody2D rb = this.gameObject.GetComponent<Rigidbody2D>();
+            
             rb.constraints = RigidbodyConstraints2D.FreezePositionX;
             rb.constraints = RigidbodyConstraints2D.FreezePositionY;
             rb.constraints = RigidbodyConstraints2D.FreezeRotation;
