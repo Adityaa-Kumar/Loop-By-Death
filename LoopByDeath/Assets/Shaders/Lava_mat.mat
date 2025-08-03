@@ -39,8 +39,11 @@ Material:
     m_Ints: []
     m_Floats:
     - _HighlightsSpread: 2.5
+    - _MovementSpeed: 1
     - _QueueControl: 0
     - _QueueOffset: 0
+    - _Scale: 3
+    - _StartTime: 15
     m_Colors:
     - _BaseColor: {r: 0.9529412, g: 0.08393413, b: 0.05098036, a: 0}
     - _HighlightsColor: {r: 1.301887, g: 0.5210479, b: 0.1412425, a: 0}
