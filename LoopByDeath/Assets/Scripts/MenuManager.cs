@@ -5,6 +5,6 @@ public class MenuManager : MonoBehaviour
 {
     public void OnStartClick()
     {
-        SceneManager.LoadScene("GameScene");
+        SceneManager.LoadScene("Level1");
     }
 }

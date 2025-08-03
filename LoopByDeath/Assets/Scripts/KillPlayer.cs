@@ -6,6 +6,8 @@ public class KillPlayer : MonoBehaviour
     public GameObject player;
     public Transform respawnPt;
 
+    double numLoops;
+
     void Start()
     {
 
@@ -25,6 +27,7 @@ public class KillPlayer : MonoBehaviour
             rb.constraints = RigidbodyConstraints2D.FreezePositionX;
             other.gameObject.GetComponent<PlayerMovement>().isDead = true;
 
+            
             StartCoroutine(Respawn());
 
 

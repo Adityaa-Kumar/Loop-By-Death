@@ -22,14 +22,19 @@ public class PlayerMovement : MonoBehaviour
     public float maxFallSpeed = 18f;
     public float fallSpeedMultiplier = 2f;
 
+    
+
     [Header("Miscellaneous")]
     public Rigidbody2D rb;
     public bool isDead;
-     bool isFacingRight = true;
+    bool isFacingRight = true;
     public GameObject playerCorpse;
+    GameObject LoopMgr;
 
     void Start()
     {
+        LoopMgr = GameObject.Find("LoopManager");
+        LoopMgr.GetComponent<LoopManager>().ReduceLoops();
 
     }
 
@@ -48,6 +53,12 @@ public class PlayerMovement : MonoBehaviour
             rb.constraints = RigidbodyConstraints2D.FreezeRotation;
 
             Instantiate(playerCorpse, this.transform.position, Quaternion.identity);
+            Destroy(this.gameObject);
+
+        }
+
+        if (LoopMgr.GetComponent<LoopManager>().loops == 0 && this.gameObject)
+        {
             Destroy(this.gameObject);
         }
     }

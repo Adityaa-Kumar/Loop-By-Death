@@ -289,6 +289,8 @@ MonoBehaviour:
   baseGravity: 2
   maxFallSpeed: 18
   fallSpeedMultiplier: 2
+  loops: 5
+  loopText: {fileID: 9046516172381688132, guid: 1a8929089e66141bd9514d571c26328a, type: 3}
   rb: {fileID: 5701383044735738861}
   isDead: 0
   playerCorpse: {fileID: 9164955379904654293, guid: 2ecbfc4e0938e49b9965fb1dc890b625, type: 3}

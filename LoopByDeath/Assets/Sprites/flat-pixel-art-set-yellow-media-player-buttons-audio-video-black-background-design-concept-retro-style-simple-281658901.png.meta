@@ -1,0 +1,585 @@
+fileFormatVersion: 2
+guid: 1af695c8449234a10a23e3332713a2dd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 205924157941431913
+    second: flat-pixel-art-set-yellow-media-player-buttons-audio-video-black-background-design-concept-retro-style-simple-281658901_0
+  - first:
+      213: -5610416692467083762
+    second: flat-pixel-art-set-yellow-media-player-buttons-audio-video-black-background-design-concept-retro-style-simple-281658901_1
+  - first:
+      213: -4057368788736139667
+    second: flat-pixel-art-set-yellow-media-player-buttons-audio-video-black-background-design-concept-retro-style-simple-281658901_2
+  - first:
+      213: 4314572581723480587
+    second: flat-pixel-art-set-yellow-media-player-buttons-audio-video-black-background-design-concept-retro-style-simple-281658901_3
+  - first:
+      213: 4573029850788036733
+    second: flat-pixel-art-set-yellow-media-player-buttons-audio-video-black-background-design-concept-retro-style-simple-281658901_4
+  - first:
+      213: -3125414501058681688
+    second: flat-pixel-art-set-yellow-media-player-buttons-audio-video-black-background-design-concept-retro-style-simple-281658901_5
+  - first:
+      213: -2898122979414449645
+    second: flat-pixel-art-set-yellow-media-player-buttons-audio-video-black-background-design-concept-retro-style-simple-281658901_6
+  - first:
+      213: 5874084265841218937
+    second: flat-pixel-art-set-yellow-media-player-buttons-audio-video-black-background-design-concept-retro-style-simple-281658901_7
+  - first:
+      213: 1648166785699200479
+    second: flat-pixel-art-set-yellow-media-player-buttons-audio-video-black-background-design-concept-retro-style-simple-281658901_8
+  - first:
+      213: -7598834244328672652
+    second: flat-pixel-art-set-yellow-media-player-buttons-audio-video-black-background-design-concept-retro-style-simple-281658901_9
+  - first:
+      213: -885125075397949988
+    second: flat-pixel-art-set-yellow-media-player-buttons-audio-video-black-background-design-concept-retro-style-simple-281658901_10
+  - first:
+      213: -4260656739640695014
+    second: flat-pixel-art-set-yellow-media-player-buttons-audio-video-black-background-design-concept-retro-style-simple-281658901_11
+  - first:
+      213: -4774230946552732780
+    second: flat-pixel-art-set-yellow-media-player-buttons-audio-video-black-background-design-concept-retro-style-simple-281658901_12
+  - first:
+      213: 7324887374974527340
+    second: flat-pixel-art-set-yellow-media-player-buttons-audio-video-black-background-design-concept-retro-style-simple-281658901_13
+  - first:
+      213: -8161963730419640359
+    second: flat-pixel-art-set-yellow-media-player-buttons-audio-video-black-background-design-concept-retro-style-simple-281658901_14
+  - first:
+      213: -4784828184595184131
+    second: flat-pixel-art-set-yellow-media-player-buttons-audio-video-black-background-design-concept-retro-style-simple-281658901_15
+  - first:
+      213: 278554653081990220
+    second: flat-pixel-art-set-yellow-media-player-buttons-audio-video-black-background-design-concept-retro-style-simple-281658901_16
+  - first:
+      213: -360850249773703101
+    second: flat-pixel-art-set-yellow-media-player-buttons-audio-video-black-background-design-concept-retro-style-simple-281658901_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: flat-pixel-art-set-yellow-media-player-buttons-audio-video-black-background-design-concept-retro-style-simple-281658901_0
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 269
+        width: 77
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96e35cc3ee69bd200800000000000000
+      internalID: 205924157941431913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flat-pixel-art-set-yellow-media-player-buttons-audio-video-black-background-design-concept-retro-style-simple-281658901_1
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 270
+        width: 78
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e06d3935ebbc322b0800000000000000
+      internalID: -5610416692467083762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flat-pixel-art-set-yellow-media-player-buttons-audio-video-black-background-design-concept-retro-style-simple-281658901_2
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 269
+        width: 163
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6e10a0659451b7c0800000000000000
+      internalID: -4057368788736139667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flat-pixel-art-set-yellow-media-player-buttons-audio-video-black-background-design-concept-retro-style-simple-281658901_3
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 270
+        width: 81
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b02a44b47e070eb30800000000000000
+      internalID: 4314572581723480587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flat-pixel-art-set-yellow-media-player-buttons-audio-video-black-background-design-concept-retro-style-simple-281658901_4
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 270
+        width: 77
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d708a7b9b6aa67f30800000000000000
+      internalID: 4573029850788036733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flat-pixel-art-set-yellow-media-player-buttons-audio-video-black-background-design-concept-retro-style-simple-281658901_5
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 270
+        width: 77
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a4ea88021c40a4d0800000000000000
+      internalID: -3125414501058681688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flat-pixel-art-set-yellow-media-player-buttons-audio-video-black-background-design-concept-retro-style-simple-281658901_6
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 187
+        width: 76
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 312ea90518cc7c7d0800000000000000
+      internalID: -2898122979414449645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flat-pixel-art-set-yellow-media-player-buttons-audio-video-black-background-design-concept-retro-style-simple-281658901_7
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 181
+        width: 78
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9755d2e7480f48150800000000000000
+      internalID: 5874084265841218937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flat-pixel-art-set-yellow-media-player-buttons-audio-video-black-background-design-concept-retro-style-simple-281658901_8
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 104
+        width: 78
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fddb23095f67fd610800000000000000
+      internalID: 1648166785699200479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flat-pixel-art-set-yellow-media-player-buttons-audio-video-black-background-design-concept-retro-style-simple-281658901_9
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 186
+        width: 80
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47237bfd3848b8690800000000000000
+      internalID: -7598834244328672652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flat-pixel-art-set-yellow-media-player-buttons-audio-video-black-background-design-concept-retro-style-simple-281658901_10
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 186
+        width: 79
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd54d1bfe6767b3f0800000000000000
+      internalID: -885125075397949988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flat-pixel-art-set-yellow-media-player-buttons-audio-video-black-background-design-concept-retro-style-simple-281658901_11
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 186
+        width: 87
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a17a7dbe44b1fd4c0800000000000000
+      internalID: -4260656739640695014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flat-pixel-art-set-yellow-media-player-buttons-audio-video-black-background-design-concept-retro-style-simple-281658901_12
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 187
+        width: 77
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4932c03cf368ebdb0800000000000000
+      internalID: -4774230946552732780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flat-pixel-art-set-yellow-media-player-buttons-audio-video-black-background-design-concept-retro-style-simple-281658901_13
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 186
+        width: 77
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c67a915324a37a560800000000000000
+      internalID: 7324887374974527340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flat-pixel-art-set-yellow-media-player-buttons-audio-video-black-background-design-concept-retro-style-simple-281658901_14
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 105
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d717ba2b31eabe80800000000000000
+      internalID: -8161963730419640359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flat-pixel-art-set-yellow-media-player-buttons-audio-video-black-background-design-concept-retro-style-simple-281658901_15
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 104
+        width: 242
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df54de10e10e89db0800000000000000
+      internalID: -4784828184595184131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flat-pixel-art-set-yellow-media-player-buttons-audio-video-black-background-design-concept-retro-style-simple-281658901_16
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 104
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c44fb7b2bff9dd300800000000000000
+      internalID: 278554653081990220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flat-pixel-art-set-yellow-media-player-buttons-audio-video-black-background-design-concept-retro-style-simple-281658901_17
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 53
+        width: 580
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 340a0251c900efaf0800000000000000
+      internalID: -360850249773703101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      flat-pixel-art-set-yellow-media-player-buttons-audio-video-black-background-design-concept-retro-style-simple-281658901_0: 205924157941431913
+      flat-pixel-art-set-yellow-media-player-buttons-audio-video-black-background-design-concept-retro-style-simple-281658901_1: -5610416692467083762
+      flat-pixel-art-set-yellow-media-player-buttons-audio-video-black-background-design-concept-retro-style-simple-281658901_10: -885125075397949988
+      flat-pixel-art-set-yellow-media-player-buttons-audio-video-black-background-design-concept-retro-style-simple-281658901_11: -4260656739640695014
+      flat-pixel-art-set-yellow-media-player-buttons-audio-video-black-background-design-concept-retro-style-simple-281658901_12: -4774230946552732780
+      flat-pixel-art-set-yellow-media-player-buttons-audio-video-black-background-design-concept-retro-style-simple-281658901_13: 7324887374974527340
+      flat-pixel-art-set-yellow-media-player-buttons-audio-video-black-background-design-concept-retro-style-simple-281658901_14: -8161963730419640359
+      flat-pixel-art-set-yellow-media-player-buttons-audio-video-black-background-design-concept-retro-style-simple-281658901_15: -4784828184595184131
+      flat-pixel-art-set-yellow-media-player-buttons-audio-video-black-background-design-concept-retro-style-simple-281658901_16: 278554653081990220
+      flat-pixel-art-set-yellow-media-player-buttons-audio-video-black-background-design-concept-retro-style-simple-281658901_17: -360850249773703101
+      flat-pixel-art-set-yellow-media-player-buttons-audio-video-black-background-design-concept-retro-style-simple-281658901_2: -4057368788736139667
+      flat-pixel-art-set-yellow-media-player-buttons-audio-video-black-background-design-concept-retro-style-simple-281658901_3: 4314572581723480587
+      flat-pixel-art-set-yellow-media-player-buttons-audio-video-black-background-design-concept-retro-style-simple-281658901_4: 4573029850788036733
+      flat-pixel-art-set-yellow-media-player-buttons-audio-video-black-background-design-concept-retro-style-simple-281658901_5: -3125414501058681688
+      flat-pixel-art-set-yellow-media-player-buttons-audio-video-black-background-design-concept-retro-style-simple-281658901_6: -2898122979414449645
+      flat-pixel-art-set-yellow-media-player-buttons-audio-video-black-background-design-concept-retro-style-simple-281658901_7: 5874084265841218937
+      flat-pixel-art-set-yellow-media-player-buttons-audio-video-black-background-design-concept-retro-style-simple-281658901_8: 1648166785699200479
+      flat-pixel-art-set-yellow-media-player-buttons-audio-video-black-background-design-concept-retro-style-simple-281658901_9: -7598834244328672652
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
