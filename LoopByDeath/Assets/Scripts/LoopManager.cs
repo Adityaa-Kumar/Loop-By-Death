@@ -43,7 +43,7 @@ public class LoopManager : MonoBehaviour
             bgMusic.Pause();
         }
 
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.JoystickButton2))
         {
             DieButton();
         }
