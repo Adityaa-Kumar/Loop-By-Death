@@ -10,7 +10,7 @@ public class KillPlayer : MonoBehaviour
 
     void Start()
     {
-
+        
     }
 
     void Update()

@@ -123,5 +123,6 @@ public class LoopManager : MonoBehaviour
         pausePanel.SetActive(false);
         paused = false;
         print("Resume");
+        print(paused);
     }
 }
